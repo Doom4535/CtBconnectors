@@ -1,0 +1,256 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SATAconnectors
+LIBS:RJconnectors
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RJ45 J?
+U 1 1 5A45E85E
+P 1950 2475
+F 0 "J?" H 2150 2975 50  0000 C CNN
+F 1 "RJ45" H 1800 2975 50  0000 C CNN
+F 2 "" H 1950 2475 50  0001 C CNN
+F 3 "" H 1950 2475 50  0001 C CNN
+	1    1950 2475
+	-1   0    0    -1  
+$EndComp
+$Comp
+L RJ11 U?
+U 1 1 5A45EE49
+P 1700 1300
+F 0 "U?" H 1700 1650 60  0000 C CNN
+F 1 "RJ11" H 1700 1050 60  0000 C CNN
+F 2 "" H 1700 1300 60  0001 C CNN
+F 3 "" H 1700 1300 60  0001 C CNN
+	1    1700 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x04_Male J?
+U 1 1 5A45F047
+P 2575 1300
+F 0 "J?" H 2575 1500 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 2575 1000 50  0000 C CNN
+F 2 "" H 2575 1300 50  0001 C CNN
+F 3 "" H 2575 1300 50  0001 C CNN
+	1    2575 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_02x02_Odd_Even J?
+U 1 1 5A45F0D9
+P 5275 1300
+F 0 "J?" H 5325 1400 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 5325 1100 50  0000 C CNN
+F 2 "" H 5275 1300 50  0001 C CNN
+F 3 "" H 5275 1300 50  0001 C CNN
+	1    5275 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x08_Male J?
+U 1 1 5A45F13A
+P 2675 3375
+F 0 "J?" H 2675 3775 50  0000 C CNN
+F 1 "Conn_01x08_Male" H 2675 2875 50  0000 C CNN
+F 2 "" H 2675 3375 50  0001 C CNN
+F 3 "" H 2675 3375 50  0001 C CNN
+	1    2675 3375
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_02x04_Odd_Even J?
+U 1 1 5A45F183
+P 2775 5750
+F 0 "J?" H 2825 5950 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 2825 5450 50  0000 C CNN
+F 2 "" H 2775 5750 50  0001 C CNN
+F 3 "" H 2775 5750 50  0001 C CNN
+	1    2775 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L RJ45 J?
+U 1 1 5A45F8AA
+P 2000 4650
+F 0 "J?" H 2200 5150 50  0000 C CNN
+F 1 "RJ45" H 1850 5150 50  0000 C CNN
+F 2 "" H 2000 4650 50  0001 C CNN
+F 3 "" H 2000 4650 50  0001 C CNN
+	1    2000 4650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L RJ11 U?
+U 1 1 5A45FB7F
+P 4075 1500
+F 0 "U?" H 4075 1850 60  0000 C CNN
+F 1 "RJ11" H 4075 1250 60  0000 C CNN
+F 2 "" H 4075 1500 60  0001 C CNN
+F 3 "" H 4075 1500 60  0001 C CNN
+	1    4075 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1100 2375 1100
+Wire Wire Line
+	2050 1200 2375 1200
+Wire Wire Line
+	2375 1300 2050 1300
+Wire Wire Line
+	2050 1400 2375 1400
+Wire Wire Line
+	2300 2925 2300 3075
+Wire Wire Line
+	2300 3075 2475 3075
+Wire Wire Line
+	2475 3175 2200 3175
+Wire Wire Line
+	2200 3175 2200 2925
+Wire Wire Line
+	2475 3275 2100 3275
+Wire Wire Line
+	2100 3275 2100 2925
+Wire Wire Line
+	2475 3375 2000 3375
+Wire Wire Line
+	2000 3375 2000 2925
+Wire Wire Line
+	2475 3475 1900 3475
+Wire Wire Line
+	1900 3475 1900 2925
+Wire Wire Line
+	2475 3575 1800 3575
+Wire Wire Line
+	1800 3575 1800 2925
+Wire Wire Line
+	2475 3675 1700 3675
+Wire Wire Line
+	1700 3675 1700 2925
+Wire Wire Line
+	2475 3775 1600 3775
+Wire Wire Line
+	1600 3775 1600 2925
+Wire Wire Line
+	4425 1300 5075 1300
+Wire Wire Line
+	5075 1400 4850 1400
+Wire Wire Line
+	4850 1400 4850 1500
+Wire Wire Line
+	4850 1500 4425 1500
+Wire Wire Line
+	4425 1400 4675 1400
+Wire Wire Line
+	4675 1400 4675 1600
+Wire Wire Line
+	4675 1600 5850 1600
+Wire Wire Line
+	5850 1600 5850 1300
+Wire Wire Line
+	5850 1300 5575 1300
+Wire Wire Line
+	4425 1600 4600 1600
+Wire Wire Line
+	4600 1600 4600 1700
+Wire Wire Line
+	4600 1700 5775 1700
+Wire Wire Line
+	5775 1700 5775 1400
+Wire Wire Line
+	5775 1400 5575 1400
+Wire Wire Line
+	2575 5650 2350 5650
+Wire Wire Line
+	2350 5650 2350 5100
+Wire Wire Line
+	2575 5750 2150 5750
+Wire Wire Line
+	2150 5750 2150 5100
+Wire Wire Line
+	2575 5850 1950 5850
+Wire Wire Line
+	1950 5850 1950 5100
+Wire Wire Line
+	2575 5950 1750 5950
+Wire Wire Line
+	1750 5950 1750 5100
+Wire Wire Line
+	3075 5650 3200 5650
+Wire Wire Line
+	3200 5650 3200 5200
+Wire Wire Line
+	3200 5200 2250 5200
+Wire Wire Line
+	2250 5200 2250 5100
+Wire Wire Line
+	3075 5750 3250 5750
+Wire Wire Line
+	3250 5750 3250 5250
+Wire Wire Line
+	3250 5250 2050 5250
+Wire Wire Line
+	2050 5250 2050 5100
+Wire Wire Line
+	3075 5850 3300 5850
+Wire Wire Line
+	3300 5850 3300 5300
+Wire Wire Line
+	3300 5300 1850 5300
+Wire Wire Line
+	1850 5300 1850 5100
+Wire Wire Line
+	3075 5950 3350 5950
+Wire Wire Line
+	3350 5950 3350 5350
+Wire Wire Line
+	3350 5350 1650 5350
+Wire Wire Line
+	1650 5350 1650 5100
+NoConn ~ 1450 4300
+NoConn ~ 1400 2125
+$EndSCHEMATC
