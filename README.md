@@ -6,16 +6,16 @@ It was inspired by my need for a ribbon cable to breadboard adapter and has
 since grown to include a variety of different connectors.
 
 Included connectors:
-  SATA power
-  SATA Data
-  8x ribbon
-  10x ribbon
-  16x ribbon
-  20x ribbon
-  40x ribbon
-  46x ribbon
-  RJ11 (Phone jack)
-  RJ45 (Ethernet jack)
+  SATA power <br />
+  SATA Data <br />
+  8x ribbon <br />
+  10x ribbon <br />
+  16x ribbon <br />
+  20x ribbon <br />
+  40x ribbon <br />
+  46x ribbon <br />
+  RJ11 (Phone jack) <br />
+  RJ45 (Ethernet jack) <br />
   
 Currently, all the modules are in a single project file.  I may or may not split
 them out into their own independent batch of gerber files (for easier custom panelization).
