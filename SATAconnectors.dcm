@@ -1,11 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP RJ11
-D RJ11 (Phone jack) data line
-K RJ11 Phone jack
-F https://www.cableorganizer.com/telecom-datacom/network-instructions.htm
-$ENDCMP
-#
 $CMP SATA_data
 D SATA data connector
 K SATA

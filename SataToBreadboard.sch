@@ -1,9 +1,9 @@
 EESchema Schematic File Version 2
+LIBS:CtBconnectors-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
 LIBS:relays
-LIBS:motors
 LIBS:transistors
 LIBS:conn
 LIBS:linear
@@ -32,12 +32,12 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SATAconnectors
-LIBS:RJconnectors
+LIBS:CtBconnectors-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -48,10 +48,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Conn_01x07_Male J?
+L Conn_01x07_Male J16
 U 1 1 5A45DAB5
 P 2400 1875
-F 0 "J?" H 2400 2275 50  0000 C CNN
+F 0 "J16" H 2400 2275 50  0000 C CNN
 F 1 "Conn_01x07_Male" H 2400 1475 50  0000 C CNN
 F 2 "" H 2400 1875 50  0001 C CNN
 F 3 "" H 2400 1875 50  0001 C CNN
@@ -59,10 +59,10 @@ F 3 "" H 2400 1875 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x07_Male J?
+L Conn_01x07_Male J18
 U 1 1 5A45DB9C
 P 3150 5275
-F 0 "J?" H 3150 5675 50  0000 C CNN
+F 0 "J18" H 3150 5675 50  0000 C CNN
 F 1 "Conn_01x07_Male_Even" H 3150 4875 50  0000 C CNN
 F 2 "" H 3150 5275 50  0001 C CNN
 F 3 "" H 3150 5275 50  0001 C CNN
@@ -70,10 +70,10 @@ F 3 "" H 3150 5275 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x08_Male J?
+L Conn_01x08_Male J17
 U 1 1 5A45DC43
 P 3125 4250
-F 0 "J?" H 3125 4650 50  0000 C CNN
+F 0 "J17" H 3125 4650 50  0000 C CNN
 F 1 "Conn_01x08_Male_Odd" H 3125 3750 50  0000 C CNN
 F 2 "" H 3125 4250 50  0001 C CNN
 F 3 "" H 3125 4250 50  0001 C CNN
@@ -81,10 +81,10 @@ F 3 "" H 3125 4250 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x03_Male J?
+L Conn_01x03_Male J20
 U 1 1 5A45DE74
 P 6475 2400
-F 0 "J?" H 6475 2600 50  0000 C CNN
+F 0 "J20" H 6475 2600 50  0000 C CNN
 F 1 "Conn_01x03_Male_Even" H 6475 2200 50  0000 C CNN
 F 2 "" H 6475 2400 50  0001 C CNN
 F 3 "" H 6475 2400 50  0001 C CNN
@@ -92,10 +92,10 @@ F 3 "" H 6475 2400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x04_Male J?
+L Conn_01x04_Male J19
 U 1 1 5A45DFDF
 P 6450 1750
-F 0 "J?" H 6450 1950 50  0000 C CNN
+F 0 "J19" H 6450 1950 50  0000 C CNN
 F 1 "Conn_01x04_Male_Odd" H 6450 1450 50  0000 C CNN
 F 2 "" H 6450 1750 50  0001 C CNN
 F 3 "" H 6450 1750 50  0001 C CNN
@@ -103,10 +103,10 @@ F 3 "" H 6450 1750 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SATA_data U?
+L SATA_data-RESCUE-CtBconnectors U1
 U 1 1 5A460B7D
 P 1425 975
-F 0 "U?" H 1675 1275 60  0000 C CNN
+F 0 "U1" H 1675 1275 60  0000 C CNN
 F 1 "SATA_data" H 1275 1275 60  0000 C CNN
 F 2 "" H 1525 1475 60  0001 C CNN
 F 3 "" H 1525 1475 60  0001 C CNN
@@ -114,10 +114,10 @@ F 3 "" H 1525 1475 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SATA_data U?
+L SATA_data-RESCUE-CtBconnectors U3
 U 1 1 5A460D3D
 P 5550 1150
-F 0 "U?" H 5800 1450 60  0000 C CNN
+F 0 "U3" H 5800 1450 60  0000 C CNN
 F 1 "SATA_data" H 5400 1450 60  0000 C CNN
 F 2 "" H 5650 1650 60  0001 C CNN
 F 3 "" H 5650 1650 60  0001 C CNN
@@ -181,10 +181,10 @@ Wire Wire Line
 Wire Wire Line
 	5350 2500 5350 1550
 $Comp
-L SATA_power U?
+L SATA_power-RESCUE-CtBconnectors U2
 U 1 1 5A461055
 P 1600 3275
-F 0 "U?" H 2250 3725 60  0000 C CNN
+F 0 "U2" H 2250 3725 60  0000 C CNN
 F 1 "SATA_power" H 1200 3725 60  0000 C CNN
 F 2 "" V 2100 3175 60  0001 C CNN
 F 3 "" V 2100 3175 60  0001 C CNN
