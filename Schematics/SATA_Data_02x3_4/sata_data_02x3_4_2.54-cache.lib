@@ -1,0 +1,77 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# Conn_01x03
+#
+DEF Conn_01x03 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Conn_01x03" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_01x04
+#
+DEF Conn_01x04 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Conn_01x04" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SATA_data
+#
+DEF SATA_data U 0 40 Y Y 1 F N
+F0 "U" 200 450 60 H V C CNN
+F1 "SATA_data" 50 -450 60 H V C CNN
+F2 "" 100 500 60 H I C CNN
+F3 "" 100 500 60 H I C CNN
+DRAW
+S -200 400 250 -400 0 1 0 N
+X GND 1 450 300 200 L 50 50 1 1 B
+X A+ 2 450 200 200 L 50 50 1 1 B
+X A- 3 450 100 200 L 50 50 1 1 B
+X GND 4 450 0 200 L 50 50 1 1 B
+X B- 5 450 -100 200 L 50 50 1 1 B
+X B+ 6 450 -200 200 L 50 50 1 1 B
+X GND 7 450 -300 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library
