@@ -31,7 +31,7 @@ U 1 1 5CE60474
 P 2850 2250
 F 0 "J1" H 2950 2250 50  0000 C CNN
 F 1 "Conn_01x05" H 3150 2150 50  0000 C CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53261-0471_1x04-1MP_P1.25mm_Horizontal" H 2850 2250 50  0001 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0410_1x05_P1.25mm_Horizontal" H 2850 2250 50  0001 C CNN
 F 3 "~" H 2850 2250 50  0001 C CNN
 	1    2850 2250
 	-1   0    0    -1  
