@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Ultrasonic_4pin_to_3pin_2.54-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -38,18 +39,6 @@ $EndComp
 Wire Wire Line
 	2650 2350 3500 2350
 Wire Wire Line
-	3500 2350 3500 2200
-Wire Wire Line
-	4200 1800 3500 1800
-Wire Wire Line
-	3500 1800 3500 2000
-Wire Wire Line
-	4200 1900 3750 1900
-Wire Wire Line
-	3750 1900 3750 2450
-Wire Wire Line
-	3750 2450 2650 2450
-Wire Wire Line
 	2650 2250 3300 2250
 Wire Wire Line
 	3300 2250 3300 1800
@@ -74,18 +63,6 @@ F 3 "" H 3200 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 3200 1700
-$Comp
-L power:GND #PWR0102
-U 1 1 5DC9013E
-P 3750 2450
-F 0 "#PWR0102" H 3750 2200 50  0001 C CNN
-F 1 "GND" H 3755 2277 50  0000 C CNN
-F 2 "" H 3750 2450 50  0001 C CNN
-F 3 "" H 3750 2450 50  0001 C CNN
-	1    3750 2450
-	1    0    0    -1  
-$EndComp
-Connection ~ 3750 2450
 Text Notes 2200 2200 0    50   ~ 0
 Vdd
 Text Notes 2200 2300 0    50   ~ 0
@@ -103,16 +80,24 @@ GND
 Text Notes 850  900  0    50   ~ 0
 Schematic for adaptor board to convert 4 pin ultrasonic module to 3 pin module
 $Comp
-L Device:R_Small R1
-U 1 1 5DC927D8
-P 3500 2100
-F 0 "R1" H 3559 2146 50  0000 L CNN
-F 1 "1K" H 3559 2055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 3500 2100 50  0001 C CNN
-F 3 "~" H 3500 2100 50  0001 C CNN
-	1    3500 2100
-	1    0    0    -1  
+L power:PWR_FLAG #FLG0102
+U 1 1 5DC93BA4
+P 3200 1700
+F 0 "#FLG0102" H 3200 1775 50  0001 C CNN
+F 1 "PWR_FLAG" V 3200 1827 50  0000 L CNN
+F 2 "" H 3200 1700 50  0001 C CNN
+F 3 "~" H 3200 1700 50  0001 C CNN
+	1    3200 1700
+	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	4200 1800 3500 1800
+Wire Wire Line
+	3500 2350 3500 2200
+Wire Wire Line
+	3500 1800 3500 2000
+Wire Wire Line
+	3750 2450 2650 2450
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5DC934EC
@@ -124,15 +109,33 @@ F 3 "~" H 3750 2450 50  0001 C CNN
 	1    3750 2450
 	0    1    1    0   
 $EndComp
+Connection ~ 3750 2450
 $Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5DC93BA4
-P 3200 1700
-F 0 "#FLG0102" H 3200 1775 50  0001 C CNN
-F 1 "PWR_FLAG" V 3200 1827 50  0000 L CNN
-F 2 "" H 3200 1700 50  0001 C CNN
-F 3 "~" H 3200 1700 50  0001 C CNN
-	1    3200 1700
-	0    -1   -1   0   
+L power:GND #PWR0102
+U 1 1 5DC9013E
+P 3750 2450
+F 0 "#PWR0102" H 3750 2200 50  0001 C CNN
+F 1 "GND" H 3755 2277 50  0000 C CNN
+F 2 "" H 3750 2450 50  0001 C CNN
+F 3 "" H 3750 2450 50  0001 C CNN
+	1    3750 2450
+	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4200 1900 3750 1900
+Wire Wire Line
+	3750 1900 3750 2450
+$Comp
+L Device:R_Small R1
+U 1 1 5DC927D8
+P 3500 2100
+F 0 "R1" H 3559 2146 50  0000 L CNN
+F 1 "30K" H 3559 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3500 2100 50  0001 C CNN
+F 3 "~" H 3500 2100 50  0001 C CNN
+	1    3500 2100
+	1    0    0    -1  
+$EndComp
+Text Notes 850  1400 0    50   ~ 0
+This board does NOT convert voltage levels,\nand as such is not guaranteed to allow for\nsafe usage of 5V parts with 3V3 systems.\nThe large resistor value *MAY* be safe,\nbut you should check your setup first.
 $EndSCHEMATC
